@@ -1,0 +1,503 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/font/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+body {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-weight: 200;
+  background: #c4c1bc;
+  color: #141414;
+  display: block;
+  --escala: 1; 
+}
+
+.main {
+  margin-left: 250px;
+  padding: 0;
+}
+
+/*________________________________PERSONALIZAR (modos)________________________________*/
+
+body[data-modo="compacto"] { --escala: 0.7; }
+body[data-modo="medio"]    { --escala: 1; }
+body[data-modo="extenso"]  { --escala: 1.4; }
+
+.opcao {
+  padding-left: 40px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.opcao:hover,
+.opcao.ativa { font-weight: 500; }
+
+/* texto do conteúdo (o menu mantém o tamanho) */
+.main p                      { font-size: calc(1.125rem * var(--escala)); }
+.main h1                     { font-size: calc(2rem * var(--escala)); }
+.main h3                     { font-size: calc(1.17rem * var(--escala)); }
+.main .descricao             { font-size: calc(3rem * var(--escala)); }
+.main .titulo-curriculo      { font-size: calc(1.5rem * var(--escala)); }
+.main .subtitulo-curriculo   { font-size: calc(1.125rem * var(--escala)); }
+
+/*________________________________MENU________________________________*/
+
+.menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ded8d8;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+/*________________________________INICIO________________________________*/
+
+.home {
+  position:relative;
+  padding-left: 20px;
+  padding-bottom: 0%;
+  margin: 0%;
+  font-size: large;
+}
+
+a.home:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.home:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.home:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.home:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________DROP DOWN PROJETOS________________________________*/
+
+.projetos {
+  font-size: large;
+  cursor: pointer;
+  padding-left: 20px;
+  margin: 0%;
+}
+
+.projetos:hover {
+  font-weight: 500;
+}
+
+.projetos-drop {
+  display: none;
+  font-size: large;
+  font-weight: 500;
+}
+
+.projetos-drop.open {
+  display: block;
+
+}
+
+.projetos-drop a {
+  display: block;
+  color: #141414;;
+}
+
+.projetos-opcs {
+  padding-left: 40px;
+  font-weight: 200;
+}
+
+a.projetos-opcs:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.projetos-opcs:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.projetos-opcs:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.projetos-opcs:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.projetos-opcs:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.projetos-opcs:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.projetos-opcs:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.projetos-opcs:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________CURRICULO MENU________________________________*/
+
+.curriculo {
+  position:relative;
+  padding-left: 20px;
+  font-size: large;
+}
+
+a.curriculo:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.curriculo:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.curriculo:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.curriculo:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________PERSONALIZAR________________________________*/
+
+.personalizar {
+  font-size: large;
+  cursor: pointer;
+  padding-left: 20px;
+  margin: 0%;
+}
+
+.personalizar:hover {
+  font-weight: 500;
+  color: #141414;;
+}
+
+.personalizar-drop {
+  display: none;
+  font-size: large;
+  font-weight: 500;
+  color: #141414;;
+}
+
+.personalizar-drop.open {
+  display: block;
+  color: #141414;;
+}
+
+.personalizar-drop a {
+  display: block;
+  color: #141414;;
+}
+
+.p-compacto {
+  padding-left: 40px;
+  font-weight: 200;
+  color: #141414;;
+}
+
+.p-compacto:hover {
+  font-weight: 500;
+  color: #141414;;
+}
+
+/*________________________________CONTACTOS________________________________*/
+
+.contactos {
+  position: absolute;
+  bottom: 30px;
+  padding-left: 20px;
+}
+
+.p-contactos {
+  margin: 0%;
+  padding-bottom: 5px;
+}
+
+
+a.instagram:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.instagra:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.instagram:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.instagram:visited {
+  text-decoration: none;
+  color: #141414;
+}
+
+/*________________________________H1 e H3________________________________*/
+
+h1 {
+  padding-top: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 0%;
+  kerning: auto;
+
+}
+
+/*________________________________REDIREÇÃO________________________________*/
+
+.p-redirecao {
+  margin: 0%;
+  padding: 0%
+}
+
+a.p-redirecao:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.p-redirecao:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.p-redirecao:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.p-redirecao:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________TEXTOS REDIREÇÃO________________________________*/
+
+.p-t-redirecao {
+  margin: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: xxx-large;
+  font-weight: 400;
+}
+
+a.p-t-redirecao:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.p-t-redirecao:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.p-t-redirecao:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.p-t-redirecao:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________DESCRIÇÃO________________________________*/
+
+.descricao {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: xxx-large;
+}
+
+/*________________________________CURRICULO PAG________________________________*/
+
+.titulo-curriculo {
+  font-weight: 400;
+  font-size: x-large;
+  text-decoration: overline;
+  text-decoration-style: 1px;
+  padding-top: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5px;
+  margin: 0%;
+}
+
+.subtitulo-curriculo {
+  font-weight: 400;
+  font-size: large;
+  padding-top: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5px;  
+  margin: 0%;
+}
+
+p {
+  font-weight: 200;
+  font-size: large;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 5px;
+  margin: 0%;
+}
+
+/*________________________________IMAGENS________________________________*/
+
+.vertical,
+.horizontal {
+  width: auto;          /* a largura segue a proporção original */
+  padding-bottom: 5px;
+  padding-right: 5px;
+  margin: 0%;
+}
+
+.vertical   { height: calc(700px * var(--escala)); }
+.horizontal { height: calc(500px * var(--escala)); }
+
+/*________________________________VIDEO________________________________*/
+
+video {
+  width: auto;
+  height: auto;
+}
+
+/*________________________________AUTORES________________________________*/
+
+.autores {
+  font-size: auto;
+  color: #141414;;
+}
+
+a.autores:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: #141414;;
+}
+
+a.autores:active {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.autores:link {
+  text-decoration: none;
+  color: #141414;;
+}
+
+a.autores:visited {
+  text-decoration: none;
+  color: #141414;;
+}
+
+/*________________________________FOOTER________________________________*/
+
+footer {
+  align-content:flex-end;
+  padding-left: 1%;
+}
+
+/*________________________________MOBILE________________________________*/
+@media (max-width: 768px) {
+
+  /* o menu passa para o topo, em fluxo normal */
+  .menu {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 12px 0 16px;
+  }
+
+  .main { margin-left: 0; }
+
+  .contactos {
+    position: static;
+    padding: 16px 20px 0;
+  }
+
+  /* áreas de toque confortáveis */
+  .menu .home,
+  .menu .curriculo,
+  .menu .projetos,
+  .menu .personalizar,
+  .menu .projetos-opcs,
+  .menu .opcao {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* margens laterais legíveis (1% num telemóvel é quase nada) */
+  .main h1,
+  .main h3,
+  .main p,
+  .main footer,
+  .main .descricao,
+  .main .p-t-redirecao,
+  .main .titulo-curriculo,
+  .main .subtitulo-curriculo {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* textos grandes mais pequenos (continuam a respeitar o modo escolhido) */
+  .main h1             { font-size: calc(1.5rem  * var(--escala)); }
+  .main .descricao     { font-size: calc(1.5rem  * var(--escala)); }
+  .main .p-t-redirecao { font-size: calc(1.75rem * var(--escala)); }
+
+  /* imagens e vídeo nunca saem do ecrã */
+  .vertical,
+  .horizontal {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+  }
+  video { max-width: 100%; }
+
+  /* "Compacto" em mobile = duas imagens por linha */
+  body[data-modo="compacto"] .vertical,
+  body[data-modo="compacto"] .horizontal { max-width: 48%; }
+}
